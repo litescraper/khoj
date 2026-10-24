@@ -105,3 +105,11 @@ Why Contribute?
 - Learn & Grow: Work on cutting-edge AI, LLMs, and semantic search technologies.
 
 You can help us build new features, improve the project documentation, report issues and fix bugs. If you're a developer, please see our [Contributing Guidelines](https://docs.khoj.dev/contributing/development) and check out [good first issues](https://github.com/khoj-ai/khoj/contribute) to work on.
+
+## Serper-compatible endpoints
+
+Set `SERPER_BASE_URL` to the compatible provider base URL and use its key in
+`SERPER_DEV_API_KEY`. Unset or empty, the existing `https://google.serper.dev` default is
+preserved. Trailing slashes are removed before the existing route is appended.
+
+Support any Serper.dev-compatible endpoint (like litescrape.com, serpbase.dev, serpensapi.org, and others)

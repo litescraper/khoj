@@ -39,7 +39,7 @@ GOOGLE_SEARCH_API_KEY = os.getenv("GOOGLE_SEARCH_API_KEY")
 GOOGLE_SEARCH_ENGINE_ID = os.getenv("GOOGLE_SEARCH_ENGINE_ID")
 # Serper Dev API configurations
 SERPER_DEV_API_KEY = os.getenv("SERPER_DEV_API_KEY")
-SERPER_DEV_URL = "https://google.serper.dev/search"
+SERPER_DEV_URL = f"{(os.getenv('SERPER_BASE_URL') or 'https://google.serper.dev').rstrip('/')}/search"
 # Firecrawl API configurations
 FIRECRAWL_API_KEY = os.getenv("FIRECRAWL_API_KEY")
 # SearXNG API configurations
